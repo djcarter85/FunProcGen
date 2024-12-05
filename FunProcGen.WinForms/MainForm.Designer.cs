@@ -31,7 +31,7 @@
             formsPlot = new ScottPlot.WinForms.FormsPlot();
             distributionTypeCombo = new ComboBox();
             label1 = new Label();
-            refreshButton = new Button();
+            regenerateButton = new Button();
             SuspendLayout();
             // 
             // formsPlot
@@ -62,22 +62,22 @@
             label1.TabIndex = 2;
             label1.Text = "Distribution:";
             // 
-            // refreshButton
+            // regenerateButton
             // 
-            refreshButton.Location = new Point(321, 6);
-            refreshButton.Name = "refreshButton";
-            refreshButton.Size = new Size(75, 23);
-            refreshButton.TabIndex = 3;
-            refreshButton.Text = "Refresh";
-            refreshButton.UseVisualStyleBackColor = true;
-            refreshButton.Click += RefreshButton_Click;
+            regenerateButton.Location = new Point(321, 6);
+            regenerateButton.Name = "regenerateButton";
+            regenerateButton.Size = new Size(93, 23);
+            regenerateButton.TabIndex = 3;
+            regenerateButton.Text = "Regenerate";
+            regenerateButton.UseVisualStyleBackColor = true;
+            regenerateButton.Click += RegenerateButton_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(refreshButton);
+            Controls.Add(regenerateButton);
             Controls.Add(label1);
             Controls.Add(distributionTypeCombo);
             Controls.Add(formsPlot);
@@ -92,6 +92,6 @@
         private ScottPlot.WinForms.FormsPlot formsPlot;
         private ComboBox distributionTypeCombo;
         private Label label1;
-        private Button refreshButton;
+        private Button regenerateButton;
     }
 }

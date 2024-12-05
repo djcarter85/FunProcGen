@@ -23,7 +23,7 @@ public partial class MainForm : Form
         this.RefreshHistogram();
     }
 
-    private void RefreshButton_Click(object sender, EventArgs e)
+    private void RegenerateButton_Click(object sender, EventArgs e)
     {
         this.RefreshHistogram();
     }
